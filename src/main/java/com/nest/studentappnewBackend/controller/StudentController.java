@@ -15,4 +15,14 @@ public class StudentController {
     public String Contact(){
         return "Welcome to contact page";
     }
+
+    @GetMapping("/gallery")
+    public String Gallery(){
+        return "welcome to gallery!!";
+    }
+
+    @GetMapping("/home")
+    public String Home(){
+        return "welcome to home page";
+    }
 }
