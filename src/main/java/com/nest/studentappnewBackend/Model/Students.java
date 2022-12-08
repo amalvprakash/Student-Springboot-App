@@ -1,11 +1,9 @@
 package com.nest.studentappnewBackend.Model;
 
-import com.nest.studentappnewBackend.DAo.StudentDAO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name = "students")
@@ -17,9 +15,9 @@ public class Students {
 
     private String name;
 
-    private int RollNO;
-    private String AdmissionNo;
-    private String College;
+    private int rollNO;
+    private String admissionNo;
+    private String college;
 
     public Students() {
     }
@@ -27,9 +25,9 @@ public class Students {
     public Students(int id, String name, int rollNO, String admissionNo, String college) {
         this.id = id;
         this.name = name;
-        this.RollNO = rollNO;
-        this.AdmissionNo = admissionNo;
-        this.College = college;
+        this.rollNO = rollNO;
+        this.admissionNo = admissionNo;
+        this.college = college;
     }
 
     public int getId() {
@@ -49,26 +47,26 @@ public class Students {
     }
 
     public int getRollNO() {
-        return RollNO;
+        return rollNO;
     }
 
     public void setRollNO(int rollNO) {
-        RollNO = rollNO;
+        this.rollNO = rollNO;
     }
 
     public String getAdmissionNo() {
-        return AdmissionNo;
+        return admissionNo;
     }
 
     public void setAdmissionNo(String admissionNo) {
-        AdmissionNo = admissionNo;
+        this.admissionNo = admissionNo;
     }
 
     public String getCollege() {
-        return College;
+        return college;
     }
 
     public void setCollege(String college) {
-        College = college;
+        this.college = college;
     }
 }
